@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Booking">
+         <font>
+            <Font size="39.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="100.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="444.0" prefWidth="1000.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="Kunde">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Tidsperiode">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Dinosaur" />
+                <MenuItem mnemonicParsing="false" text="Middelalder" />
+                  <MenuItem mnemonicParsing="false" text="Fremtiden" />
+              </items>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Tidsmaskine">
+              <items>
+                <MenuItem mnemonicParsing="false" text="ChronoCruiser 3000" />
+                <MenuItem mnemonicParsing="false" text="QuantumLeap Explorer" />
+              </items>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Guide">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Prof. Terra Rex" />
+                <MenuItem mnemonicParsing="false" text="Prof. Cedric Hawthorne" />
+                  <MenuItem mnemonicParsing="false" text="Eobard Thawne" />
+              </items>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>
