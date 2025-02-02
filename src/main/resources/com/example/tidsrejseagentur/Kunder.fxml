@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.KundeController">
    <children>
       <TableView prefHeight="563.0" prefWidth="1000.0">
         <columns>
@@ -28,7 +27,11 @@
                   <Insets right="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Rediger kunde" />
+            <Button mnemonicParsing="false" text="Rediger kunde">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="Return" />
          </children>
          <VBox.margin>
             <Insets top="50.0" />

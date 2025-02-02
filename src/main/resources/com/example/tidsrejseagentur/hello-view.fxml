@@ -7,33 +7,33 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.tidsrejseagentur.HelloController">
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-   <Label text="Velkommen til tidsrejse agenturet">
+   <Label fx:id="text" text="Velkommen til tidsrejse agenturet">
       <font>
          <Font size="41.0" />
       </font>
    </Label>
    <HBox alignment="CENTER" prefHeight="182.0" prefWidth="960.0">
       <children>
-         <Button mnemonicParsing="false" text="Kunde administration">
+         <Button fx:id="kundeBtn" mnemonicParsing="false" onAction="#onKundeButtonClick" text="Kunde administration">
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin>
          </Button>
-         <Button mnemonicParsing="false" text="Tidsmaskiner">
+         <Button fx:id="maskineBtn" mnemonicParsing="false" onAction="#onMaskineButtonClick" text="Tidsmaskiner">
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin>
          </Button>
-         <Button mnemonicParsing="false" text="Tidsperioder">
+         <Button fx:id="periodeBtn" mnemonicParsing="false" onAction="#onPeriodeButtonClick" text="Tidsperioder">
             <HBox.margin>
                <Insets right="20.0" />
             </HBox.margin>
          </Button>
-         <Button mnemonicParsing="false" text="Booking" />
+         <Button fx:id="bookingBtn" mnemonicParsing="false" onAction="#onBookingButtonClick" text="Booking" />
       </children>
    </HBox>
 </VBox>

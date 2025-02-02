@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -8,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.PeriodeController">
    <children>
       <Label text="Læs om de forskellige tidsperioder">
          <font>
@@ -27,7 +27,8 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="363.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="388.0" minHeight="10.0" prefHeight="347.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="363.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label text="Dinosaurenes tid" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
@@ -45,6 +46,33 @@
                   <Font size="30.0" />
                </font>
             </Label>
+            <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="Return" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Rejs tilbage i tiden og oplev dinosaurernes verden!
+
+Drømmer du om at stå ansigt til ansigt med en brølende T-Rex? Eller se majestætiske brachiosaurer græsse under urtidens gigantiske bregner? Hos Tidsrejse Bureauet tilbyder vi en helt unik rejseoplevelse, hvor du kan udforske Jorden, som den var for 65+ millioner år siden.
+
+Med vores avancerede tidsrejseteknologi er du garanteret en sikker og autentisk rejse til dinosaurernes æra. Vores professionelle guider sikrer, at du får den ultimative oplevelse, hvad enten du vil tage fantastiske billeder af forhistorisk natur, mærke suset fra flyveøgler over himlen, eller lære om planetens historie på tæt hold.
+
+Tag springet ud i fortiden og skab minder, der ikke bare varer en livstid – men en hel tidsalder.
+
+Er du klar til at tage på dit livs eventyr? Kontakt os i dag og reserver din plads til en tur, der sprænger grænserne for tid og rum!" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label text="Træd ind i middelalderen og oplev historiens mest episke æra!
+
+Er du klar til at rejse tilbage til en tid med modige riddere, storslåede slotte og mystiske markeder? Hos Tidsrejse Bureauet tilbyder vi en autentisk rejse til middelalderen, hvor du kan opleve historiens mest dramatiske og romantiske periode på nærmeste hold.
+
+Forestil dig at deltage i en ridderturnering, smage på kongens banket eller udforske borge, der troner over smukke landskaber. Vores tidsrejseeksperter sørger for, at du får en sikker og magisk oplevelse, fyldt med både eventyr og historisk indsigt.
+
+Sæt kurs mod en tid, hvor ære og eventyr regerede! Denne rejse er perfekt til historieelskere, eventyrere og dem, der drømmer om at gå i fodsporene på konger, dronninger og heltemodige riddere.
+
+Kontakt os i dag, og gør dig klar til en rejse, der bringer fortiden til live på en måde, du aldrig har oplevet før!" wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label text="Er du klar til at tage et spring ind i det ukendte og udforske en verden fyldt med avanceret teknologi, futuristiske byer og en helt ny måde at leve på? Hos Tidsrejse Bureauet tilbyder vi dig en eksklusiv mulighed for at rejse frem i tiden og opleve morgendagens verden i dag.
+
+Forestil dig at gå gennem svævende metropoler, møde hyperintelligente AI-robotter eller udforske kolonier på andre planeter. Vores tidsrejseeksperter guider dig trygt gennem fremtidens landskab og sikrer, at du får en oplevelse, der både fascinerer og inspirerer.
+
+Denne rejse er for de nysgerrige sjæle, der ikke bare vil drømme om fremtiden, men opleve den på første hånd. Uanset om du er eventyrlysten, teknologientusiast eller bare vil tage en selfie i en flyvende bil, venter fremtiden på dig!
+
+Book din plads i dag
+             " wrapText="true" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
          </children>
       </GridPane>
    </children>

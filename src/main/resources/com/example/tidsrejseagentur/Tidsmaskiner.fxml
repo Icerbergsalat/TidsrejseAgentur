@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -8,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tidsrejseagentur.MaskineController">
    <children>
       <Label text="Tidsmaskiner">
          <font>
@@ -25,8 +25,9 @@
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="371.0" minHeight="10.0" prefHeight="371.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="373.0" minHeight="10.0" prefHeight="320.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="371.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label text="Chronocruiser 3000" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
@@ -39,6 +40,17 @@
                   <Font size="30.0" />
                </font>
             </Label>
+            <Button mnemonicParsing="false" onAction="#onReturnButtonClick" text="Return" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+            <Label text="Tag på en sømløs rejse gennem tidens uendelige korridorer.
+
+ChronoCruiser 3000 er den nyeste tidsmaskine på markedet, designet til dem, der søger både komfort og eventyr. Maskinen er formet som en elegant kapsel med et glaskuppeldesign, der giver 360 graders udsyn til de tidsperioder, du besøger. Med sit avancerede Temporal Stabilization Core sikrer ChronoCruiser, at du kan rejse trygt gennem selv de mest turbulente historiske øjeblikke uden tidsforvridning.
+
+ChronoCruiser 3000 er perfekt til familieeventyr eller den afslappede tidsrejsende, der ønsker at opleve fortiden eller fremtiden i luksus." wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label text="For den eventyrlystne rejsende, der ikke er bange for at skubbe grænserne for tid og rum.
+
+QuantumLeap Explorer er en robust, modulær tidsmaskine, der er bygget til ekstreme tidsrejser. Uanset om du vil besøge den kaotiske tid efter Big Bang eller stå på første parket til fremtidens teknologiske revolution, er QuantumLeap Explorer din ideelle makker. Maskinens unikke Quantum Flux Engine kan bryde gennem tidens dybeste lag, så du kan udforske de mest utilgængelige tidszoner.
+
+QuantumLeap Explorer er for de dristige sjæle, der vil have en tidstur fyldt med action og ubegrænset udforskning. Det er ikke bare en tidsmaskine – det er din billet til at opdage tidens hemmeligheder." wrapText="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
          </children>
       </GridPane>
    </children>
