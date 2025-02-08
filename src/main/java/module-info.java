@@ -11,6 +11,7 @@ module com.example.tidsrejseagentur {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.desktop;
+    requires java.sql;
 
     opens com.example.tidsrejseagentur to javafx.fxml;
     exports com.example.tidsrejseagentur;
