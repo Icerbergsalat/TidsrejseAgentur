@@ -8,7 +8,7 @@ public class DatabaseManager {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             //opretter en forbindelse mellem programmet og mysql databasen
-            connection = DriverManager.getConnection("");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/TidsrejseAgentur", "user", "26Uj96MSlPMV4o3aHqIypWcu");
             return connection;
         } catch (ClassNotFoundException e) {
             System.out.println(e.getMessage());

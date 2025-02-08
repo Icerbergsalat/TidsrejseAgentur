@@ -67,7 +67,15 @@
                <font>
                   <Font size="20.0" />
                </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
             </MenuButton>
+            <Button mnemonicParsing="false" text="Make reservation">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
          </children>
       </HBox>
       <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
